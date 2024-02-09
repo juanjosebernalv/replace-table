@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-items: center;
     justify-content: center;
-    
+
 }
 
 .row {
@@ -21,7 +21,6 @@
 
 .left {
     display: flex;
-    flex-grow: 1;
     background-color: blue;
     justify-content: end;
     padding: 10px;
@@ -31,7 +30,6 @@
 }
 
 .right {
-    flex-grow: 1;
     background-color: blueviolet;
     padding: 10px;
     justify-content: start;
