@@ -1,5 +1,5 @@
 import React from 'react';
-import { Descriptions } from 'antd';
+import { Button, Descriptions } from 'antd';
 
 
 export const Description = () => {
@@ -7,33 +7,41 @@ export const Description = () => {
   const items = [
     {
       key: '1',
-      label: 'UserName',
-      children: <p>Zhou Maomao</p>,
+      label: 'Periodo de Gracia',
+      children: <p>9/30/2022</p>,
     },
     {
       key: '2',
-      label: 'Telephone',
-      children: <p>1810000000</p>,
+      label: 'Squad',
+      children: <p>C2</p>,
     },
     {
       key: '3',
-      label: 'Live',
-      children: <p>Hangzhou, Zhejiang</p>,
+      label: 'Fondo',
+      children: <p>P.A. GRAMERCY – OMNI I</p>,
     },
     {
       key: '4',
-      label: 'Remark',
-      children: <p>empty</p>,
+      label: 'Estado',
+      children: <p>Legal</p>,
     },
     {
       key: '5',
-      label: 'Address',
-      children: <p>No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China</p>,
+      label: 'Estado Periodo de Gracia',
+      children: <p>Legal</p>,
+    },
+    {
+      key: '6',
+      label: 'Fecha Max 1er Cuota',
+      children: <p>11/14/2022</p>,
     },
   ];
 
 
   return (
-    <Descriptions title="User Info" items={items} />
+    <>
+      <Descriptions title="Detalle Crédito Rotativo" items={items} />
+      <Button type='primary'>Ver Detalle</Button>
+    </>
   );
 };
